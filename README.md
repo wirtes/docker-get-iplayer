@@ -3,6 +3,7 @@
 This Dockerfile will create an Ubuntu image with get_iplayer pre-loaded.
 
 Use this command to build the `ubuntu-get-iplayer` image from the `Dockerfile`:
+
 `docker image build -t ubuntu-get-iplayer .`
 
 This shell script will create and launch a container interactively. The `/local_data/` directory in the container will be mapped to whatever path you specify in the `docker run` command. Handy for storing your downloads outside of the container at download time.
