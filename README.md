@@ -6,17 +6,17 @@ You can then connect a VPN on your machine running Docker and run get_iplayer co
 
 This shell script will create and launch a container interactively. The `/local_data/` directory in the container will be mapped to whatever path you specify in the `docker run` command. Handy for storing your downloads outside of the container at download time.
 
-`
+```
 # Kill and remove the running container
 docker rm -f ubuntu-get-iplayer
 
 # Re-launch the image interactively with the name "ubuntu-get-iplayer"
 docker run -it --name ubuntu-get-iplayer --volume <PATH TO YOUR LOCAL DOWNLOAD DIRECTORY>:/local_data docker-iplayer
-`
+```
 
 I wrap this command into a shell script, `ubuntu-iplayer.sh`, where I can also remind myself of useful get_iplayer commands:
 
-`
+```
 #!/bin/zsh
 # Use your shell of choice above
 #
@@ -37,5 +37,5 @@ docker rm -f ubuntu-get-iplayer
 
 # Re-launch the image interactively with the name "ubuntu-get-iplayer"
 docker run -it --name ubuntu-get-iplayer --volume <PATH TO YOUR LOCAL DIRECTORY>:/local_data docker-iplayer
-`
+```
 https://github.com/get-iplayer/get_iplayer for full get_iplayer documentation.
