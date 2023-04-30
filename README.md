@@ -28,7 +28,7 @@ echo "*"
 echo "* Launching an Ubuntu container with get_iplayer preinstalled"
 echo "* and /local_data mapped to <PATH TO YOUR LOCAL DIRECTORY>"
 echo "*"
-echo '* ex: get_iplayer --tv-quality-"1080p" --pid=p0ffzvy3 --output /local_data/'
+echo '* ex: get_iplayer --tv-quality="1080p" --pid=p0ffzvy3 --output /local_data/'
 echo "*"
 echo "* --pid-recursive --> this will download all files in a season/show"
 echo "* --force         --> this will force a redownload"
